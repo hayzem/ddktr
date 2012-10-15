@@ -1,0 +1,40 @@
+-----------------------------------------------------------------------
+HELP FILE FOR ANALYSE.PRO (CREATED 27.08)
+-----------------------------------------------------------------------
+OPTIONALS
+help       :  shows this page
+range(x,z) :  x and z range for the events
+grange     :  result range for the graph
+cathodeno  :  cathode index starting from left to right (1,2,...,16)
+anodeno    :  anode index starting from left to right (1,2,....,16)
+steerno    :  index for middle three steering electrodes from left to right
+symbol     :  symbol for the plot procedure
+gthick     :  thickness for the plotting symbol
+-----------------------------------------------------------------------
+OPTIONS
+	    :  options for the program
+     *use positions as parameter : 
+       - 0  :  cathode energies with respect to z
+       - 1  :  anode energies with respect to z
+       - 2  :  anode energies with respect to x
+       - 3  :  anode/cathode ratio with respect to z
+       - 4  :  cathode/anode ratio with respect to z
+       - 5  :  steering electrode energies with respect to z
+       - 6  :  steering electrode energies with respect to x
+     *use energies as parameter :
+       - 10 :  specified anode energy vs. previous neighbour anode energy
+       - 11 :  specified anode energy vs. specified cathode energy
+       - 12 :  specifide anode energy vs. specified steering electrode energy
+       - 13 :  specified steering energy vs. specified cathode energy
+       - 14 :  max anode energy vs. specified cathode energy
+       - 15 :  specified cathode energy vs. anode ratio 
+     *plot energy spectrums :
+       - 20 :  for specified anode
+       - 21 :  for specified cathode
+       - 22 :  for specified steering electrode
+       - 23 :  max anode energy
+       - 24 ;  summed neighbour anodes
+------------------------------------------------------------------------
+NOTES 
+-just to remember for evlist : 1,16 cathodes / 17,32 anodes / 33,35 steering..
+-option 2 and 6 can give an idea about the positions of electrodes 
